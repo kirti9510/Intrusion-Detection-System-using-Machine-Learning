@@ -1,0 +1,19 @@
+<div>
+    <h2 style="text-align: center">
+        <span> Intrusion Detection System </span>
+    </h2>
+    <h3 style="text-align: center">
+    <div class="pos-center" ng-if="predict">Predicting alerts ...</div>
+    <div class="pos-center" ng-if="learn">Learning ....</div>
+    <div class="pos-center" ng-if="!predict && !learn">Idle mode</div>
+    </h3>
+     <div class="btns-group">
+      <button type="button"
+            class="btn" ng-click="startTrain()"><h2>Train KDD dataset</h2></button>
+      <button type="button" 
+            class="btn" ng-click="startPredict()"><h2>Predict</h2></button>
+      <button type="button" 
+            class="btn" ng-click="viewResults()"><h2>View Results</h2></button>
+    </div>
+
+</div>

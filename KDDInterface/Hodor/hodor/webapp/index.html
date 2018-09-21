@@ -1,0 +1,50 @@
+<html lang="en" ng-app="AF">
+<head>
+    <title>Crevise: Hodor</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hodor configuration manager">
+    <meta name="author" content="God">
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <!-- Bootstrap Core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="/css/simple-sidebar.css" rel="stylesheet">
+    <link href="/css/nv.d3.css" rel="stylesheet">
+
+
+
+</head>
+<script src="/js/libs/jquery.min.js"></script>
+<script src="/js/libs/ajaxmin.js"></script>
+<script src="/js/libs/ajaxmodal.js"></script>
+<script src="/js/libs/graph.min.js"></script>
+<script src="/js/libs/ajaxgraphmin.js"></script>
+<script src="/js/libs/bootstrap.min.js"></script>
+<script src="/js/libs/ajaxroutermin.js"></script>
+<script src="/js/libs/ajaxresourcemin.js"></script>
+<script src="/js/libs/angular-nvd3.js"></script>
+
+<script src="/js/controllers/app.controller.js"></script>
+<script src="/js/controllers/manage.controller.js"></script>
+<script src="/js/controllers/dashboard.controller.js"></script>
+
+<script src="/js/controllers/viewresults.controller.js"></script>
+
+<script src="/js/resources/manage.resource.js"></script>
+<script src="/js/resources/settings.resource.js"></script>
+<script src="/js/resources/signature.resource.js"></script>
+<script src="/js/resources/rule.resource.js"></script>
+<script src="/js/resources/alerts.resource.js"></script>
+
+ 
+<script src="/js/directives/mindmap.directive.js"></script>
+
+<body ng-controller="MainCtrl">
+    <div>
+        <div ui-view="content" ng-cloak=""></div>
+    </div>
+</body>
+ 
+</html>

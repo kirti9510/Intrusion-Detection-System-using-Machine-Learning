@@ -1,0 +1,15 @@
+<div>
+    <H3 style="text-align: center"> Intrusions </H3>
+   <!--  <div class="show-results" ng-repeat="p in packets track by $index">
+        {{$index+1}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{p}}
+    </div> -->
+    <div class="show-results" ng-repeat="p in packets track by $index">      
+	  <div ng-if="$even">
+	    <div>
+	      <span>{{ ($index+1)/2 + 0.5 }}</span>
+	      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	      <span>{{ p }}</span>
+	    </div>
+	  </div>
+	</div>
+</div>
